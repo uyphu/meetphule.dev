@@ -19,6 +19,16 @@ const ExperienceCard: React.FC<Props> = ({ experience }) => {
           <li key={idx}>{item}</li>
         ))}
       </ul>
+      <div className="mt-2 flex flex-wrap gap-2">
+        {experience.techStack.map((tech, idx) => (
+            <span
+            key={idx}
+            className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-white px-2 py-1 rounded text-sm"
+            >
+            {tech}
+            </span>
+        ))}
+        </div>
     </div>
   );
 };
