@@ -4,5 +4,6 @@ export interface Experience {
     period: string;
     location?: string;
     responsibilities: string[];
-  }
+    techStack: string[]; 
+}
   
