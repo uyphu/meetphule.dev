@@ -1,5 +1,4 @@
 // src/components/Hero.jsx
-import React from "react";
 import DownloadResumeButton from "./DownloadResumeButton";
 
 const Hero = () => {
