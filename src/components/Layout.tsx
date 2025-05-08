@@ -1,16 +1,16 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import BackToTopButton from './BackToTopButton';
 
 const Layout = () => {
   return (
-    <>
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300">
       <Navbar />
-      <main className="max-w-4xl mx-auto px-4 py-8 min-h-[80vh]">
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
-    </>
+      <BackToTopButton />
+    </div>
   );
 };
 
