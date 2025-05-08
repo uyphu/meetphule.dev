@@ -1,5 +1,6 @@
 // src/components/Hero.jsx
 import React from "react";
+import DownloadResumeButton from "./DownloadResumeButton";
 
 const Hero = () => {
   return (
@@ -19,15 +20,9 @@ const Hero = () => {
         Experienced in backend microservices, DevOps, and scalable systems across the U.S. and global teams.
       </p>
       <div className="flex gap-4 mt-6">
+        <DownloadResumeButton />
         <a
-          href="/resume.pdf"
-          download
-          className="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition"
-        >
-          Download Resume
-        </a>
-        <a
-          href="#contact"
+          href="/contact"
           className="bg-gray-300 dark:bg-gray-700 dark:text-white px-6 py-2 rounded-lg shadow hover:bg-gray-400 dark:hover:bg-gray-600 transition"
         >
           Contact Me
