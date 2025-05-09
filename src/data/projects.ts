@@ -2,38 +2,38 @@ import type { Project } from "../types/Project";
 
 export const projects: Project[] = [
   {
-    name: "KOA/KOP Automotive Platform",
+    name: "HAEA-KUS – Connected Vehicle Platform",
     description:
-      "Designed microservices for vehicle remote commands, OTA updates, and user preferences for Hyundai Autoever. This system operates at scale across thousands of vehicles.",
-    techStack: ["Java", "Spring Boot", "PostgreSQL", "MongoDB", "Redis", "MyBatis", "Jenkins"],
-    role: "Led backend development for core modules and integrated legacy systems (AS400) into a modern microservices architecture."
+      "Next-gen telematics system for Hyundai Autoever enabling vehicle-cloud communication, OTA updates, and secure user profile management.",
+    techStack: ["Java", "Spring Boot", "MyBatis", "PostgreSQL", "Oracle", "Redis", "MongoDB", "Kafka", "Kubernetes"],
+    role: "Built and maintained microservices (KIASVC, UVODS, KAMS, BATCH) to support remote commands, notifications, and data sync. Migrated legacy systems to Kafka-driven architecture."
   },
   {
-    name: "UVODS / UVODS2 Telematics System",
+    name: "Tandem – Vehicle Auction Simulation Platform",
     description:
-      "A high-throughput telematics platform handling vehicle ownership and data sync. Responsible for tracking trip history, driving behavior, and vehicle metadata.",
-    techStack: ["Spring Boot", "Kafka", "MyBatis", "Oracle", "Redis"],
-    role: "Developed batch jobs, REST APIs, and Kafka-driven consumers to support ETL pipelines and real-time data tracking."
+      "A backend system and dashboard for Manheim (Cox Automotive) to simulate and manage online vehicle auction data.",
+    techStack: ["Ruby on Rails", "React.js", "MongoDB", "DB2", "AWS Lambda", "Docker", "Kubernetes"],
+    role: "Developed REST APIs and admin dashboards. Integrated legacy AS400 data sources. Enabled CI/CD pipelines and automated tests with Jenkins and WebdriverIO."
   },
   {
-    name: "BMS Modernization (AT&T)",
+    name: "GOLDesp – Aviation Logistics Management",
     description:
-      "Refactored and modernized the telecom Billing Management System (BMS), transitioning from Struts/JSP to a scalable Spring Boot microservice ecosystem.",
-    techStack: ["Java", "Spring Boot", "Hibernate", "Struts", "JSP", "Kafka", "Oracle"],
-    role: "Migrated business logic to Spring Boot, improved performance, and enabled event-driven messaging using Kafka."
+      "Mobile-enabled system for Boeing to manage warehouse logistics (Picking, Receiving, Shipping) with online and offline sync capabilities.",
+    techStack: ["Java", "Spring Boot", "MongoDB", "Oracle", "GraphQL", "Kafka", "AWS", "React.js", "Xamarin"],
+    role: "Led full-stack team. Built secure microservices with DDD, event sourcing, and hybrid APIs. Developed cross-platform mobile apps and React dashboards."
   },
   {
-    name: "SSO Integration System",
+    name: "BOC Management System (BMS)",
     description:
-      "Secure authentication platform enabling Single Sign-On (SSO) using SAML2 and Shibboleth across internal enterprise systems.",
-    techStack: ["Spring Security", "SAML2", "Shibboleth", "JWT"],
-    role: "Implemented SSO token exchange and configured identity federation for multiple enterprise apps."
+      "System for AT&T/DirecTV to manage satellite transponders and scheduling data for broadcast streams.",
+    techStack: ["Java", "Spring Boot", "Hibernate", "Struts", "SOAP", "Kafka", "Oracle", "JSP", "GWT"],
+    role: "Migrated legacy systems from Struts to Spring Boot. Developed SOAP and REST APIs. Added Kafka messaging for async processing. Improved stream configuration UIs."
   },
   {
-    name: "Enterprise ERP & Reporting Tool",
+    name: "AS400 ERP Enhancement (Wanek Furniture)",
     description:
-      "Customized legacy ERP systems for manufacturing and logistics operations. Supported custom reporting and system integration with PowerBuilder and AS400.",
-    techStack: ["SQL", "AS400", "PowerBuilder", "Java", "Oracle"],
-    role: "Maintained ERP data accuracy, implemented new modules, and built cross-department SQL tools for real-time reporting."
+      "Maintained and enhanced ERP modules supporting manufacturing, inventory, and supply chain workflows.",
+    techStack: ["AS400", "SQL", "PowerBuilder", "Java", "Oracle"],
+    role: "Troubleshot ERP data flows, built internal tools for report generation, and integrated scan data into supply chain tracking."
   }
 ];
