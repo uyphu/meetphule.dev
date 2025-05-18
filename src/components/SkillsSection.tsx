@@ -34,7 +34,6 @@ const skillCategories: SkillCategory[] = [
     category: "DevOps / Cloud",
     skills: [
       { name: "AWS", icon: <FaAws />, level: "5+ years" },
-      { name: "AWS", level: "1+ years" },
       { name: "Kubernetes", icon: <SiKubernetes />, level: "3+ years" },
       { name: "Docker", icon: <FaDocker />, level: "4+ years" },
       { name: "Jenkins", icon: <SiJenkins />, level: "5+ years" },
